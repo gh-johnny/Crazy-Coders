@@ -1,0 +1,68 @@
+@media (min-width: 300px) {
+
+  %header-shapes {
+    height: 100vh;
+    width: 30px;
+    position: absolute;
+    transform: rotate(-45deg);
+    z-index: -1;
+    box-shadow: 1px 1px 3px black;
+  }
+
+  header {
+    width: 100vw;
+    min-height: 30vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+
+    // LOGO
+    > article {
+      display: flex;
+      padding-top: 5%;
+      background-image: linear-gradient(to right, $brown, $purple, $deepink, $pink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(1px 1px 1px black);
+      padding-left: 5%;
+
+      h1 {
+        font-size: 38px;
+      }
+    }
+
+    // SHAPES
+    aside {
+      @extend %header-shapes;
+      left: 20%;
+      background-color: darkred;
+
+      &:before {
+        @extend %header-shapes;
+        content: '';
+        left: 20%;
+        transform: rotate(270deg);
+        background-color: firebrick;
+      }
+
+      &:after {
+        @extend %header-shapes;
+        content: '';
+        background-color: red;
+        width: 50px;
+        top: 3%;
+      }
+  
+    }
+
+
+
+  }
+
+
+}
