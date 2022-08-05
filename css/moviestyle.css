@@ -474,7 +474,7 @@ main > section {
   }
   .pmobile a {
     text-decoration: none;
-    color: white;
+    color: rgb(252, 252, 184);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -510,8 +510,36 @@ main > section {
   .pmobile .mgroup {
     grid-auto-columns: 1fr;
   }
+  .pmobile .mgroup > article {
+    position: relative;
+  }
+  .pmobile .mgroup > article > div {
+    position: absolute;
+    background-color: rgba(59, 16, 61, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    display: none;
+  }
+  .pmobile .mgroup > article > div a {
+    height: 50px;
+    width: 50%;
+    border: 0px none transparent;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #600436;
+  }
+  .pmobile .mgroup > article:hover > div {
+    display: flex;
+    z-index: 50;
+  }
   .pmobile .mposter {
     border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
   }
   .pmobile .mposter > img {
     width: 100%;
@@ -524,6 +552,7 @@ main > section {
     align-items: center;
     z-index: 10;
     position: absolute;
+    z-index: 100;
     width: 2rem;
     padding: 0.5rem;
     background: rgba(0, 0, 0, 0);
