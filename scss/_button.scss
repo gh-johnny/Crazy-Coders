@@ -1,0 +1,287 @@
+@media (min-width:300px) {
+    .right, .left {
+        display: none;
+    }
+
+    .pmobile {
+      position: relative;
+          
+          a {
+            text-decoration: none;
+            color: white;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        
+          i {
+            font-size: 30px;
+          }
+        
+          figcaption {
+            i {
+              font-size: 10px;
+            }
+
+            h4 {
+              font-size: 14px;
+            }
+          
+            p {
+              font-size: 12px;
+            }
+          
+            span {
+              font-size: 13px;
+            }
+          }
+        
+          
+          .mscroller,
+          .mgroup {
+            display: grid;
+            gap: 1rem;
+            grid-auto-flow: column;
+          }
+          
+          .mscroller {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            grid-auto-columns: 100%;
+            padding: 2rem;
+            scroll-padding-inline: 3rem;
+          }
+          
+          .mgroup {
+            grid-auto-columns: 1fr;
+          }
+          
+          .mposter {
+            border-radius: 0.25rem;
+          }
+          
+          .mposter > img {
+            width: 100%;
+            object-fit: cover;
+          }
+          
+          .next,
+          .previous {
+            display: none;
+            align-items: center;
+            z-index: 10;
+            position: absolute;
+            width: 2rem;
+            padding: 0.5rem;
+            background: rgb(0 0 0 / 0);
+            opacity: 0;
+          }
+          
+          .previous {
+            left: 0;
+            top: 0;
+            bottom: 0;
+          }
+          
+          .next {
+            right: 0;
+            top: 0;
+            bottom: 0;
+          }
+          
+          .mgroup:first-child :where(.next, .previous) {
+            display: flex;
+          }
+          
+          .mscroller:hover :where(.next, .previous) {
+            opacity: 1;
+          }
+          
+          :where(.next, .previous):hover {
+            background: rgb(0 0 0 / 0.3);
+          }
+          
+          :where(.next, .previous) > i {
+            transition: transform 75ms linear;
+            transform: scale(1);
+          }
+          :where(.next, .previous):hover > i {
+            transform: scale(1.2);
+          }
+          
+          .mgroup:target :where(.next, .previous) {
+            display: flex;
+          }
+          
+          .mscroller:has(:target:not(:first-child))
+            .mgroup:first-of-type
+            .next {
+            display: none;
+          }
+    }
+
+    .ptablet {
+        display: none;
+    }
+}
+
+
+@media (min-width:700px) {
+  .newmovie {
+    position: relative;
+
+    .scroll {
+      display: grid;
+      grid-auto-flow: column;
+      scroll-behavior:smooth;
+      overflow:auto;
+  
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+          display: none;
+      }
+  
+      height: fit-content;
+      padding-bottom: 2%;
+    }
+  
+  
+  figure {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      > div {
+        position: absolute;
+        width: 97%;
+        height: 93%;
+        background-color: rgba(57, 55, 58, 0.7);
+        border: 5px solid #3b103d;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+        display: none;
+
+        a {
+          width: 50%;
+          height: fit-content;
+          padding: 2%;
+          background-color: #600436;
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: #fa8cc8;
+            color: white;
+          }
+        }
+      }
+  
+      img {
+          object-fit: cover;
+      }
+  
+      figcaption {
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3%;
+        background-color: rgb(28, 28, 28);
+      }
+  
+      &:hover {
+        figcaption {
+          background-color: #600436;
+        }
+        > div {
+          display: flex;
+        }
+      }
+    }
+
+  }
+
+  .scroll {
+    gap: 4%;
+    grid-auto-columns: 22%;
+  }
+
+    .pmobile {
+        display: none;
+    }
+
+    .ptablet {
+        display: flex;
+    }
+
+    .right, .left {
+        position: absolute;
+        z-index: 10;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(28, 28, 28, .5);
+        text-decoration: none;
+
+        i {
+            color: white;
+            font-size: 30px;
+        }
+
+        &:hover {
+            background-color: rgba(204, 199, 199, 0.5);
+
+            i {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .right {
+        top: 40%;
+        right: 0%;
+    }
+
+    .left {
+        top: 40%;
+        left: 0%;
+    }
+
+    .left, .right {
+        display: none;
+    }
+
+    .cp1, .cp10 {
+        display: flex;
+    } 
+}
+
+
+@media (min-width:1000px) {
+    .newmovie {
+        .scroll {
+            gap: 2.5%;
+            grid-auto-columns: 18%;
+        }
+    }
+
+    .right, .left {
+      top: 50%;
+    }
+  
+}
