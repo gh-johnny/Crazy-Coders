@@ -287,103 +287,87 @@
 }
 
 
-
-
-
 .rating, .comedy, .romance, .horror {
   display: flex;
   align-items: center;
-  width: 40%;
   justify-content: center;
+  width: 40%;
+}
+
+#actionstar, #comedystar, #romancestar, #horrorstar {
+  display: flex;
+  align-items: center;
+  column-gap: 1%;
+
+  > a {
+    padding: 1%;
+    width: 80px;
+    height: 25px;
+    text-decoration: none;
+    text-align: center;
+    border:0px none transparent;
+    border-radius: 3px;
+    background-color: #f10086;
+    color: white;
+
+    &:hover {
+        background-color: #f582a7;
+        color: black;
+    }
+}
 }
 
 #actionstar {
-    display: flex;
-    align-items: center;
-    column-gap: 3vh;
-
-    > input {
-        padding: 1%;
-        width: 90px;
-        height: 30px;
-        border:0px none transparent;
-        border-radius: 3px;
-        background-color: #f10086;
-        color: white;
-
-        &:hover {
-            background-color: #f582a7;
-            color: black;
-        }
-    }
-
     .rating {
       display: flex;
-    }
-    
-    .rating-input {
-     position: absolute !important;
-     left: -9999px !important;
-    }
-  
-    .rating-label {
-      cursor: pointer;
-      padding: 2%;
-      font-size: 20px;
-    }
-    
-    .rating-star {
-      color: orange;
-    }
-    
-    .rating-none {
-      color: #eee;
-    }
-  
-    .rating-none:checked + .rating-label .rating-none {
-      color: red;
-    }
-  
-    .rating-input:checked ~ .rating-label .rating-star {
-      color: #ddd;
-    }
-  
-    .rating-group:hover .rating-label .rating-star {
-      color: orange;
-    }
-  
-    .rating-input:hover ~ .rating-label .rating-star {
-      color: #ddd;
-    }
 
-    .rating-group:hover .rating-none:not(:hover) + .rating-label .rating-none {
-       color: #eee;
-    }
+      .rating-input {
+       position: absolute !important;
+       left: -9999px !important;
+      }
+    
+      .rating-label {
+        cursor: pointer;
+        padding: 2%;
+        font-size: 20px;
+      }
+      
+      .rating-star {
+        color: orange;
+      }
+      
+      .rating-none {
+        color: #eee;
+      }
+    
+      .rating-none:checked + .rating-label .rating-none {
+        color: red;
+      }
+    
+      .rating-input:checked ~ .rating-label .rating-star {
+        color: #ddd;
+      }
+    
+      .rating-group:hover .rating-label .rating-star {
+        color: orange;
+      }
+    
+      .rating-input:hover ~ .rating-label .rating-star {
+        color: #ddd;
+      }
   
-    .rating-none:hover + .rating-label .rating-none {
-      color: red;
+      .rating-group:hover .rating-none:not(:hover) + .rating-label .rating-none {
+         color: #eee;
+      }
+    
+      .rating-none:hover + .rating-label .rating-none {
+        color: red;
+      }
+
     }
 }
 
 #comedystar {
-    display: flex;
-    align-items: center;
-    column-gap: 3vh;
-
-    > input {
-        padding: 1%;
-        width: 90px;
-        height: 30px;
-        border:0px none transparent;
-        border-radius: 3px;
-        background-color: #f10086;
-        color: white;
-
-        &:hover {
-            background-color: #f582a7;
-            color: black;
-        }
-    }
 
     .comedy {
       display: flex;
@@ -435,24 +419,6 @@
 }
 
 #romancestar {
-    display: flex;
-    align-items: center;
-    column-gap: 3vh;
-
-    > input {
-        padding: 1%;
-        width: 90px;
-        height: 30px;
-        border:0px none transparent;
-        border-radius: 3px;
-        background-color: #f10086;
-        color: white;
-
-        &:hover {
-            background-color: #f582a7;
-            color: black;
-        }
-    }
 
     .romance {
       display: flex;
@@ -504,24 +470,6 @@
 }
 
 #horrorstar {
-    display: flex;
-    align-items: center;
-    column-gap: 3vh;
-
-    > input {
-        padding: 0.5%;
-        width: 80px;
-        height: 30px;
-        border:0px none transparent;
-        border-radius: 3px;
-        background-color: #f10086;
-        color: white;
-
-        &:hover {
-            background-color: #f582a7;
-            color: black;
-        }
-    }
 
     .horror {
       display: flex;
