@@ -8,42 +8,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>MNS</title>
   </head>
-  <body>
+  <body class="main-page">
     <main>
-      <video autoloop muted>
+      <video autoplay loop muted>
         <source src="./video/bg-Trailer.mp4" type="video/mp4">
       </video>
-      <!-- SHAPES AND GREY FILTER -->
+      <!-- SHAPES AND FILTER -->
       <aside></aside>
       <!-- MOBILE/TABLET NAVBAR -->
       <nav>
         <article></article>
-        <ul>
-          <li><a href="#movies">movies</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-        <input type="checkbox" id="arrow" />
-        <label for="arrow"><i class="fa-solid fa-brackets"></i></label>
+        <input type="checkbox" id="arrow"/>
+        <section>
+          <ul>
+            <li><a href="movies.html">movies</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </section>
+        <label for="arrow"><i class="fa-solid fa-user-secret"></i></label>
+        <h1>MNS<span>tv</span></h1>
+        <p>
+          <q>light, camera... action</q>
+        </p>
       </nav>
       <!-- LOGO -->
-      <h1>MNS</h1>
-      <!-- BIG MIDLLE SENTENCE-->
-      <article>
-        <span>The best of cinema for you at your house</span>
-        <q>light, camera... action</q>
-      </article>
+      <h1 class="logo">MNS<span>tv</span></h1>
       <!-- SIGN-UP/LOG-IN -->
       <form method="post">
         <details>
           <summary>Log in</summary>
-          <input type="email" name="email" placeholder="Email" />
-          <input type="password" name="password" placeholder="Password" />
+          <article>
+            <input type="email" name="email" placeholder="Email"/>
+            <input type="password" name="password" placeholder="Password"/>
+            <a href="movies.html">go</a>
+          </article>
         </details>
-        <a href="signup">Sign Up</a>
+        <a href="signup.html">Sign Up</a>
       </form>
       <!-- DESKTOP NAV -->
-      <section>
+      <section class="nav-desktop">
         <ul>
           <li><a href="#movies">movies</a></li>
           <li><a href="#about">about</a></li>

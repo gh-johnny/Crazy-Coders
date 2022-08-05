@@ -1,0 +1,76 @@
+@media (min-width: 700px) {
+
+  // TABLET HEADER
+  header {
+
+    nav {
+      details {
+        padding-bottom: 5%;
+        li {
+          padding: 3%;
+        }
+      }
+    }
+
+    aside {
+
+      &:before {
+        right: 0%;
+        left: 280%;
+      }
+    }
+  }
+
+  // MAIN PAGE
+  .main-page {
+    video {
+      width: 150%;
+    }
+
+    nav {
+       label {
+        top: 30%;
+       }
+
+       ul {
+        padding-bottom: 15%;
+       }
+
+       a {
+        font-size: 24px;
+       }
+
+       h1 {
+        font-size: 42px;
+       }
+
+       p {
+        right: -50vw;
+
+        &:after {
+          background-color: red;
+        }
+       }
+    }
+
+    form {
+
+      bottom: 60%;
+      font-size: 24px;
+
+      details {
+        article {
+          top: -110%;
+          right: 70%;
+        }
+      }
+    }
+  }
+
+  // SIGN UP PAGE
+  .signup-page {
+    [type="reset"], a {
+      padding: 1em 1.5em;
+    }
+  }
+}
