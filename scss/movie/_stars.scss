@@ -301,7 +301,7 @@
 
   > a {
     padding: 1%;
-    width: 80px;
+    width: 30%;
     height: 25px;
     text-decoration: none;
     text-align: center;
@@ -314,23 +314,25 @@
         background-color: #f582a7;
         color: black;
     }
+  }
+
+
+  [name=rating] {
+      position: absolute !important;
+      left: -9999px !important;
+  }
+
+  label {
+    cursor: pointer;
+    padding: 2%;
+    font-size: 20px;
+  }
 }
-}
+
 
 #actionstar {
     .rating {
       display: flex;
-
-      .rating-input {
-       position: absolute !important;
-       left: -9999px !important;
-      }
-    
-      .rating-label {
-        cursor: pointer;
-        padding: 2%;
-        font-size: 20px;
-      }
       
       .rating-star {
         color: orange;
@@ -373,17 +375,6 @@
       display: flex;
     }
     
-    .comedy-input {
-     position: absolute !important;
-     left: -9999px !important;
-    }
-  
-    .comedy-label {
-      cursor: pointer;
-      padding: 2%;
-      font-size: 20px;
-    }
-    
     .comedy-star {
       color: orange;
     }
@@ -424,17 +415,6 @@
       display: flex;
     }
     
-    .romance-input {
-     position: absolute !important;
-     left: -9999px !important;
-    }
-  
-    .romance-label {
-      cursor: pointer;
-      padding: 2%;
-      font-size: 20px;
-    }
-    
     .romance-star {
       color: orange;
     }
@@ -473,17 +453,6 @@
 
     .horror {
       display: flex;
-    }
-    
-    .horror-input {
-     position: absolute !important;
-     left: -9999px !important;
-    }
-  
-    .horror-label {
-      cursor: pointer;
-      padding: 2%;
-      font-size: 20px;
     }
     
     .horror-star {

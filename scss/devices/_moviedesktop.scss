@@ -9,8 +9,7 @@
 
     .news {
         figure {
-            display: flex;
-            flex-direction: row;
+            @include flexbox();
 
             img {
                 width: 40%;
