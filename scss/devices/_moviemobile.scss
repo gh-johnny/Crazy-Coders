@@ -39,6 +39,7 @@
     
                 &:hover > figcaption {
                 background-color: #600436;
+                transition: all .3s;
                 }
             }
         }
@@ -81,6 +82,7 @@
                 border-radius: 30px;
 
                 &:hover {
+                    transition: all .3s;
                     background-color: #f582a7;
                     color: black;
                 }
@@ -110,8 +112,13 @@
                 object-fit: cover;
                 width: 100%;
                 height: 200px;
-                border: 2px solid white;
+                border: 3px solid white;
                 border-radius: 5px;
+
+
+                &:hover {
+                    border: 3px solid #f853ae;
+                }
             }
 
             > article {
@@ -275,6 +282,7 @@
     
                     &:hover {
                         background-color: #f582a7;
+                        transition: all .3s;
                         color: black;
                     }
                 }

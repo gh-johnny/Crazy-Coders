@@ -86,6 +86,7 @@
                 > div {
                   display: flex;
                   z-index: 50;
+                  transition: all .3s;
                 }
               }
             }
@@ -222,6 +223,7 @@
 
           &:hover {
             background-color: #fa8cc8;
+            transition: all .3s;
             color: white;
           }
         }
