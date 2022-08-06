@@ -122,12 +122,6 @@
     align-items: center;
   }
 
-  html {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-
   // MAIN PAGE
   .main-page{ 
     width: 100vw;
@@ -504,6 +498,196 @@
           color: whitesmoke;
           background-color: rgb(24, 201, 101);
         }
+      }
+    }
+  }
+
+  // ABOUT PAGE
+  .about-page {
+    background-color: black;
+    color: whitesmoke;
+
+    > main {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .section-title {
+      height: 15vh;
+      display: flex;
+      align-items: flex-end;
+      border-bottom: 1px solid red;
+      padding-bottom: 5%;
+      margin-bottom: 5%;
+      font-size: 22px;
+    }
+
+    .company {
+
+      aside {
+        width: 20vw;
+        aspect-ratio: 1 / 1;
+        background-color: rgba(226, 15, 15, 0.356);
+        border-radius: 5px;
+        float: left;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 24px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+
+      }
+
+      section {
+        line-height: 2;
+        text-align: justify;
+        h2 {
+          filter: drop-shadow(4px 1px 1px rgba(226, 15, 15, 0.356));
+        }
+
+        p {
+          padding-left: 5%;
+          padding-right: 5%;
+
+          &:nth-child(2) {
+            margin-bottom: 5%;
+          }
+
+          a {
+            color: aqua;
+          }
+        }
+      }
+    }
+
+    .contributors {
+      > article:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 5vh;
+
+        figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          aside {
+            width: 80%;
+            padding-bottom: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 5%;
+            margin-bottom: 5%;
+          }
+
+          &:nth-child(1) > aside {
+            background-image: url("/img/flag-brazil.jpg");
+          }
+          &:nth-child(2) > aside {
+            background-image: url("/img/flag-japan.png");
+          }
+          &:nth-child(3) > aside {
+            background-image: url("/img/flag-india.jpg");
+          }
+        }
+      }
+    }
+
+    .timeline {
+      min-height: 80vh;
+      > article:nth-child(2) {
+        display: flex;
+        column-gap: 10vh;
+        align-items: center;
+        justify-content: center;
+
+        aside{
+          height: 60vh;
+          width: 5px;
+          position: absolute;
+          z-index: -1;
+          border-right: 5px dashed blue;
+        }
+
+        p {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 55vh;
+        }
+
+        span {
+          text-align: center;
+          width: 80vw;
+          font-size: 20px;
+          filter: drop-shadow(5px 5px 15px black);
+        }
+      }
+    }
+
+    .projects {
+      > article:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5vh;
+
+        figure {
+          width: 40vw;
+          height: 45vw;
+          border-radius: 5px;
+          position: relative;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &:nth-child(1) {
+            background-image: url("/img/22\ Jump\ Street\ \(2014\).jpg");
+          }
+          &:nth-child(2) {
+            background-image: url("/img/Due\ Date.jpg");
+          }
+          &:nth-child(3) {
+            background-image: url("/img/Limitless.jpg");
+          }
+          &:nth-child(4) {
+            background-image: url("/img/The\ Judge\ \(2014\).jpg");
+          }
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+
+        
+      }
+
+      > table {
+        margin-top: 15%;
+        margin-bottom: 15%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      tr {
+        border-bottom: 1px solid red;
+      }
+
+      tr > th:nth-child(1) {
+        border-right: 1px solid red;
+      }
+
+      td {
+        padding: 5%;
       }
     }
   }
