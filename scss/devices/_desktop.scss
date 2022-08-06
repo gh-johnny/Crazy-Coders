@@ -215,6 +215,13 @@
         .container-fluid {
           column-gap: 900px;
         }
+
+        .nav-link:hover {
+          background-color: $deepink;
+          border-radius: 10%;
+          color: $purple;
+          transition: .4s;
+        }
       }
 
       .social {
