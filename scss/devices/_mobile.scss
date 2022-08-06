@@ -121,7 +121,8 @@
     justify-content: center;
     align-items: center;
   }
-
+  
+  
   // MAIN PAGE
   .main-page{ 
     width: 100vw;
@@ -533,10 +534,13 @@
     }
 
     .contact-header {
-      height: 30vh;
       width: 100vw;
+      height: 30vh;
       display: flex;
       flex-direction: column;
+      isolation: isolate;
+      position: relative;
+      overflow: hidden;
 
       figcaption {
         display: flex;
@@ -553,7 +557,28 @@
           font-size: 36px;
           font-weight: 600;
           margin-bottom: 0;
+          position: absolute;
+          z-index: 2;
         }
+
+      }
+
+      aside {
+        @extend %shape-pattern;
+        top: -20%;
+        left: -25%;
+        z-index: 1;
+
+        &::before {
+          content: '';
+          @extend %shape-pattern;
+          bottom: -15vh;
+          right: -55vh;
+          background-color: red;
+          z-index: -1;
+        }
+
+
       }
 
       img {
@@ -562,6 +587,7 @@
         height: 100%;
         width: 100%;
         position: absolute;
+        
       }
     }
 
@@ -864,7 +890,8 @@
             background-image: url("/img/flag-brazil.jpg");
           }
           &:nth-child(2) > aside {
-            background-image: url("/img/flag-japan.png");
+            background-image: url("/img/flag-korea.jpg");
+            background-position: top;
           }
           &:nth-child(3) > aside {
             background-image: url("/img/flag-india.jpg");

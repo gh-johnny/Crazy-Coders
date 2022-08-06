@@ -1,0 +1,77 @@
+@media (min-width:1000px) {
+
+    .section-title {
+        h2 {
+            font-size: 42px;
+        }
+    }
+
+    .news {
+        figure {
+            @include flexbox();
+
+            img {
+                width: 40%;
+                object-fit: cover;
+            }
+        }
+        figcaption {
+            row-gap: 2vh;
+            background-color: rgb(221, 219, 219);
+            padding: 3%;
+
+            p {
+                font: 18px;
+                line-height: 1.5;
+            }
+
+            > p:nth-child(2) {
+                font-size: 20px;
+            }
+        }
+    }  
+
+    .recomemndation {
+        flex-direction: row;
+
+        > section:nth-child(1) {
+            width: 60%;
+            padding-top: 3%;
+            background-color: black; 
+            border-radius: 10px; 
+
+            > article {
+                width: 50%;
+            }
+        }
+
+        .genre {    
+            
+            > article {
+                width: 48%;
+            }
+
+            aside > p {
+                font-size: 16px;
+            }
+        }
+
+        .this-week {
+            width: 40%;
+            padding-top: 3%;
+            background-color: rgb(44, 7, 44);
+            border-radius: 10px;
+        }
+    }
+
+    .theater {
+        summary {
+            padding: 1%;
+        }
+
+          details {
+              width: 80%;
+          }
+
+      }
+}
