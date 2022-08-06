@@ -113,4 +113,118 @@
       }
     }
   }
+
+  // CONTACT PAGE 
+
+  .contact-page {
+    .contact,
+    .newsletter,
+    .social,
+    .faq,
+    .help {
+      > article:first-child {
+        padding-top: 5%;
+      }
+      h2 {
+        font-size: 34px;
+      }
+    }
+    .contact-header {
+      figcaption {
+        h1 {
+          font-size: 48px;
+        }
+      }
+    }
+    .navbar {
+      .navbar-brand{
+        font-size: 28px;
+      }
+      .nav-item {
+        font-size: 20px;
+      }
+    }
+    .contact,
+    .newsletter {
+      padding-top: 5%;
+    }
+    .contact {
+      input {
+        font-size: 20px;
+      }
+      textarea {
+        font-size: 20px;
+      }
+    }
+    .newsletter {
+      > article:last-child {
+        flex-direction: row;
+      }
+      .newsletter-form {
+        .form-label {
+          font-size: 20px;
+        }
+        .mb-3 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .social {
+      > article:last-child {
+        aside {
+          i {
+            align-items: center;
+            justify-content: center;
+            width: 130px;
+            height: 130px;
+            font-size: 42px;
+            padding: 5%;
+          }
+  
+        }
+      }
+    }
+
+    .faq {
+      h3 {
+        font-size: 24px;
+      }
+      .information {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+
+        article  {
+          width: 50%;
+        }
+
+        h4 {
+          font-size: 22px;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .help {
+      .helpcenter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+
+        article {
+          width: 50%;
+        }
+
+        h4 {
+          font-size: 22px;
+        }
+        a{ 
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
