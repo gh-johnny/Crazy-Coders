@@ -654,6 +654,39 @@
         }
       }
     }
+    
+    .social {
+      > article:last-child {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        aside {
+          display: flex;
+          width: 100%;
+          justify-content: space-evenly;
+          padding-top: 5%;
+
+          i {
+            text-align: center;
+            width: 10vh;
+            height: 100%;
+            color: $pink;
+            font-size: 40px;
+            padding: 3%;
+            border: 1px solid $purple;
+            border-radius: 50%;
+
+            &:hover {
+              color: $purple;
+              background-color: $pink;
+              border: 1px solid $pink;
+            }
+          } 
+        }
+      }
+    }
+
 
   }
 
