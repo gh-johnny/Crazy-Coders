@@ -1,0 +1,491 @@
+.mscroller {
+
+  .mgroup:nth-child(1) {
+    > figure:nth-child(1) {
+      i {
+          color: rgb(118, 118, 250);
+      }
+    }
+    > figure:nth-child(2) {
+      i {
+          color: rgb(118, 118, 250);
+      }
+    }
+  }
+
+  .mgroup:nth-child(2) {
+    > figure:nth-child(2) {
+      i {
+          color: gainsboro;
+      }
+
+      div {
+          > i:nth-child(2) {
+              color: gold;
+          }
+          > i:nth-child(3) {
+              color: gold;
+          }
+          > i:nth-child(4) {
+              color: gold;
+          }
+          > i:nth-child(5) {
+              background: linear-gradient(to right, gold 40%, gainsboro 60%);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+          }
+      }
+    }
+    > figure:nth-child(3) {
+      i {
+          color: gainsboro;
+      }
+
+      div {
+          > i:nth-child(2) {
+              color: gold;
+          }
+          > i:nth-child(3) {
+              color: gold;
+          }
+          > i:nth-child(4) {
+              color: gold;
+          }
+          > i:nth-child(5) {
+              background: linear-gradient(to right, gold 40%, gainsboro 60%);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+          }
+      }
+    }
+  }
+
+  .mgroup:nth-child(3) {
+    > figure:nth-child(2) {
+      i {
+          color: gainsboro;
+      }
+
+      div {
+          > i:nth-child(2) {
+              color: gold;
+          }
+          > i:nth-child(3) {
+              color: gold;
+          }
+          > i:nth-child(4) {
+              color: gold;
+          }
+          > i:nth-child(5) {
+              background: linear-gradient(to right, gold 80%, gainsboro 20%);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+          }
+      }
+    }
+
+    > figure:nth-child(3) {
+      i {
+          color: gainsboro;
+      }
+
+      div {
+          > i:nth-child(2) {
+              color: gold;
+          }
+          > i:nth-child(3) {
+              color: gold;
+          }
+          > i:nth-child(4) {
+              color: gold;
+          }
+          > i:nth-child(5) {
+              background: linear-gradient(to right, gold 80%, gainsboro 20%);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+          }
+      }
+    }
+  }
+
+  .mgroup:nth-child(4) {
+    > figure:nth-child(2) {
+      i {
+          color: gainsboro;
+      }
+
+      div {
+          > i:nth-child(2) {
+              color: gold;
+          }
+          > i:nth-child(3) {
+              color: gold;
+          }
+          > i:nth-child(4) {
+              color: gold;
+          }
+          > i:nth-child(5) {
+              color: gold;
+          }
+          > i:nth-child(6) {
+              background: linear-gradient(to right, gold 50%, gainsboro 50%);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+          }
+      }
+    }
+
+    > figure:nth-child(3) {
+      i {
+          color: rgb(118, 118, 250);
+      }
+    }
+  }
+
+}
+
+
+.scroll {
+    span {
+        font-size: 20px;
+        padding-top: 5%;
+    }
+
+    > figure:nth-child(1) {
+        i {
+            color: rgb(118, 118, 250);
+        }
+    }
+    > figure:nth-child(2) {
+        i {
+            color: rgb(118, 118, 250);
+        }
+    }
+    > figure:nth-child(3) {
+        i {
+            color: gainsboro;
+        }
+
+        div {
+            > i:nth-child(1) {
+                color: gold;
+            }
+            > i:nth-child(2) {
+                color: gold;
+            }
+            > i:nth-child(3) {
+                color: gold;
+            }
+            > i:nth-child(4) {
+                background: linear-gradient(to right, gold 40%, gainsboro 60%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    > figure:nth-child(4) {
+        i {
+            color: gainsboro;
+        }
+
+        div {
+            > i:nth-child(1) {
+                color: gold;
+            }
+            > i:nth-child(2) {
+                color: gold;
+            }
+            > i:nth-child(3) {
+                color: gold;
+            }
+            > i:nth-child(4) {
+                background: linear-gradient(to right, gold 40%, gainsboro 60%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    
+    > figure:nth-child(5) {
+        i {
+            color: gainsboro;
+        }
+
+        div {
+            > i:nth-child(1) {
+                color: gold;
+            }
+            > i:nth-child(2) {
+                color: gold;
+            }
+            > i:nth-child(3) {
+                color: gold;
+            }
+            > i:nth-child(4) {
+                background: linear-gradient(to right, gold 80%, gainsboro 20%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    > figure:nth-child(6) {
+        i {
+            color: gainsboro;
+        }
+
+        div {
+            > i:nth-child(1) {
+                color: gold;
+            }
+            > i:nth-child(2) {
+                color: gold;
+            }
+            > i:nth-child(3) {
+                color: gold;
+            }
+            > i:nth-child(4) {
+                background: linear-gradient(to right, gold 80%, gainsboro 20%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    > figure:nth-child(7) {
+        i {
+            color: gainsboro;
+        }
+
+        div {
+            > i:nth-child(1) {
+                color: gold;
+            }
+            > i:nth-child(2) {
+                color: gold;
+            }
+            > i:nth-child(3) {
+                color: gold;
+            }
+            > i:nth-child(4) {
+                color: gold;
+            }
+            > i:nth-child(6) {
+                background: linear-gradient(to right, gold 50%, gainsboro 50%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    > figure:nth-child(8) {
+        i {
+            color: rgb(118, 118, 250);
+        }
+    }
+}
+
+
+.rating, .comedy, .romance, .horror {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+#actionstar, #comedystar, #romancestar, #horrorstar {
+  display: flex;
+  align-items: center;
+  column-gap: 1%;
+
+  > a {
+    padding: 1%;
+    width: 30%;
+    height: 25px;
+    text-decoration: none;
+    text-align: center;
+    border:0px none transparent;
+    border-radius: 3px;
+    background-color: #f10086;
+    color: white;
+
+    &:hover {
+        background-color: #f582a7;
+        transition: all .3s;
+        color: black;
+    }
+  }
+
+
+  [name=rating] {
+      position: absolute !important;
+      left: -9999px !important;
+  }
+
+  label {
+    cursor: pointer;
+    padding: 2%;
+    font-size: 20px;
+  }
+}
+
+
+#actionstar {
+    .rating {
+      display: flex;
+      
+      .rating-star {
+        color: orange;
+      }
+      
+      .rating-none {
+        color: #eee;
+      }
+    
+      .rating-none:checked + .rating-label .rating-none {
+        color: red;
+      }
+    
+      .rating-input:checked ~ .rating-label .rating-star {
+        color: #ddd;
+      }
+    
+      .rating-group:hover .rating-label .rating-star {
+        color: orange;
+      }
+    
+      .rating-input:hover ~ .rating-label .rating-star {
+        color: #ddd;
+      }
+  
+      .rating-group:hover .rating-none:not(:hover) + .rating-label .rating-none {
+         color: #eee;
+      }
+    
+      .rating-none:hover + .rating-label .rating-none {
+        color: red;
+      }
+
+    }
+}
+
+#comedystar {
+
+    .comedy {
+      display: flex;
+    }
+    
+    .comedy-star {
+      color: orange;
+    }
+    
+    .comedy-none {
+      color: #eee;
+    }
+  
+    .comedy-none:checked + .comedy-label .comedy-none {
+      color: red;
+    }
+  
+    .comedy-input:checked ~ .comedy-label .comedy-star {
+      color: #ddd;
+    }
+  
+    .comedy-group:hover .comedy-label .comedy-star {
+      color: orange;
+    }
+  
+    .comedy-input:hover ~ .comedy-label .comedy-star {
+      color: #ddd;
+    }
+
+    .comedy-group:hover .comedy-none:not(:hover) + .comedy-label .comedy-none {
+       color: #eee;
+    }
+  
+
+    .comedy-none:hover + .comedy-label .comedy-none {
+      color: red;
+    }
+}
+
+#romancestar {
+
+    .romance {
+      display: flex;
+    }
+    
+    .romance-star {
+      color: orange;
+    }
+    
+    .romance-none {
+      color: #eee;
+    }
+  
+    .romance-none:checked + .romance-label .romance-none {
+      color: red;
+    }
+  
+    .romance-input:checked ~ .romance-label .romance-star {
+      color: #ddd;
+    }
+  
+    .romance-group:hover .romance-label .romance-star {
+      color: orange;
+    }
+  
+    .romance-input:hover ~ .romance-label .romance-star {
+      color: #ddd;
+    }
+
+    .romance-group:hover .romance-none:not(:hover) + .romance-label .romance-none {
+       color: #eee;
+    }
+  
+
+    .romance-none:hover + .romance-label .romance-none {
+      color: red;
+    }
+}
+
+#horrorstar {
+
+    .horror {
+      display: flex;
+    }
+    
+    .horror-star {
+      color: orange;
+    }
+    
+    .horror-none {
+      color: #eee;
+    }
+  
+    .horror-none:checked + .horror-label .horror-none {
+      color: red;
+    }
+  
+    .horror-input:checked ~ .horror-label .horror-star {
+      color: #ddd;
+    }
+  
+    .horror-group:hover .horror-label .horror-star {
+      color: orange;
+    }
+  
+    .horror-input:hover ~ .horror-label .horror-star {
+      color: #ddd;
+    }
+
+    .horror-group:hover .horror-none:not(:hover) + .horror-label .horror-none {
+       color: #eee;
+    }
+  
+
+    .horror-none:hover + .horror-label .horror-none {
+      color: red;
+    }
+}
