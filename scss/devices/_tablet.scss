@@ -73,4 +73,42 @@
       padding: 1em 1.5em;
     }
   }
+
+  // ABOUT PAGE
+  .about-page {
+     .section-title {
+      height: 10vh;
+     }
+
+    .contributors {
+      > article:nth-child(2) {
+        justify-content: center;
+        figure {
+          width: 40%;
+          aside {
+            width: 100%;
+            padding-bottom: 60%;
+          }
+        }
+      }
+    }
+    .timeline {
+      > article:nth-child(2) {
+        aside {
+          margin-top: 5%;
+          width: 30%;
+          height: 50vh;
+        }
+
+        p {
+          height: 45vh;
+        }
+      }
+    }
+    .projects {
+      table {
+        width: 100%;
+      }
+    }
+  }
 }
