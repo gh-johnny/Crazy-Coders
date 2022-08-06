@@ -155,6 +155,90 @@
       padding-bottom: 20%;
     }
 
+    // CONTACT PAGE
+    .contact-page {
+
+      .contact,
+      .newsletter,
+      .social,
+      .faq,
+      .help {
+
+        > article:first-child {
+          padding-top: 2%;
+
+          i {
+            padding: 1%;
+            font-size: 32px;
+          }
+  
+          h2 {
+            font-size: 42px;
+            padding-left: 1%;
+          }
+        }
+
+      }
+
+      .contact,
+      .newsletter {
+        padding-top: 5%;
+      }
+      .newsletter {
+        > article:last-child {
+          width: 100%;
+          .giphy-embed {
+            width: 30%;
+            margin-right: 5%;
+          }
+
+        }
+      }
+      .contact-header {
+        height: 50vh;
+
+        img {
+          object-position: center;
+        }
+
+        figcaption {
+          justify-content: center;
+          height: 50vh;
+
+          h1 {
+            font-size: 56px;
+          }
+        }
+      }
+
+      .navbar {
+        .container-fluid {
+          column-gap: 900px;
+        }
+      }
+
+      .social {
+        > article:last-child {
+          aside {
+            row-gap: 10px;
+  
+            i {
+              padding: 3%;
+  
+            }
+          }
+        }
+      }
+
+      .faq {
+        padding-top: 5%;
+        
+        h3 {
+          font-size: 32px;
+        }
+      }
+    }
+
     // ABOUT PAGE
     .about-page {
       .section-title {
