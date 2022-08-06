@@ -1,9 +1,8 @@
 @media (min-width:1000px) {
 
-    main {
-        > section {
-            padding-left: 3%;
-            padding-right: 3%;
+    .section-title {
+        h2 {
+            font-size: 42px;
         }
     }
 
