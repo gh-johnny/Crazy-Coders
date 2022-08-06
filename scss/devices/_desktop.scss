@@ -154,4 +154,102 @@
       padding-top: 20%;
       padding-bottom: 20%;
     }
+
+    // ABOUT PAGE
+    .about-page {
+      .section-title {
+        height: 20vh;
+      }
+
+      h2 {
+        font-size: 42px;
+      }
+
+      .company {
+        aside {
+          margin-bottom: 5%;
+          margin-top: 5%;
+
+          p {
+            font-size: 62px;
+          }
+
+          span {
+            font-size: 28px;
+          }
+        }
+        section {
+          p {
+            &:nth-child(2) {
+              margin: 2%;
+            }
+          }
+        }
+      }
+
+      .contributors {
+        > article:nth-child(1) {
+          width: 100%;
+        }
+        > article:nth-child(2) {
+          justify-content: space-between;
+          figure {
+            width: 30%;
+          }
+        }
+      }
+
+      .timeline {
+        > article:nth-child(2) {
+          aside {
+            width: 1%;
+          }
+        }
+      }
+
+      .projects {
+        .section-title {
+          width: 100%;
+        }
+
+        > article:nth-child(2) {
+          gap: 5%;
+          justify-content: left;
+          position: relative;
+
+          figure {
+            width: 20%;
+            height: 35vw;
+
+            &:nth-child(1) {
+              
+              margin-left: 20%;
+            }
+
+            &:nth-child(2) {
+              position: absolute;
+              bottom: -10%;
+              right: 45%;
+            }
+
+            &:nth-child(3) {
+              position: absolute;
+              bottom: -50%;
+              right: 30%;
+            }
+            &:nth-child(4) {
+              position: absolute;
+              bottom: -100%;
+              right: 15%;
+            }
+          }
+        }
+
+        table {
+          margin-top: 5%;
+          margin-bottom: 5%;
+          width: 50%;
+        }
+      }
+    }
   }
